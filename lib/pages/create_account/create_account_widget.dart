@@ -66,6 +66,10 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
             image: Image.asset(
               'assets/images/createAccount_BG@3x.jpg',
             ).image,
+            colorFilter: ColorFilter.mode(
+              Colors.black.withOpacity(0.3),
+              BlendMode.dstIn,
+            ),
           ),
         ),
         child: Column(
@@ -73,7 +77,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
           children: [
             Container(
               width: double.infinity,
-              height: 500.0,
+              height: 450.0,
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
                 boxShadow: const [
@@ -98,33 +102,33 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
+                      // Padding(
+                      //   padding:
+                      //       const EdgeInsetsDirectional.fromSTEB(0.0, 76.0, 0.0, 0.0),
+                      //   child: Row(
+                      //     mainAxisSize: MainAxisSize.max,
+                      //     children: [
+                      //       if (!(Theme.of(context).brightness ==
+                      //           Brightness.dark))
+                      //         Image.asset(
+                      //           'assets/images/logoUpHome_dark@3x.png',
+                      //           width: 200.0,
+                      //           height: 60.0,
+                      //           fit: BoxFit.fitWidth,
+                      //         ),
+                      //       if (Theme.of(context).brightness == Brightness.dark)
+                      //         Image.asset(
+                      //           'assets/images/logoUpHome@3x.png',
+                      //           width: 200.0,
+                      //           height: 60.0,
+                      //           fit: BoxFit.fitWidth,
+                      //         ),
+                      //     ],
+                      //   ),
+                      // ),
                       Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 76.0, 0.0, 0.0),
-                        child: Row(
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            if (!(Theme.of(context).brightness ==
-                                Brightness.dark))
-                              Image.asset(
-                                'assets/images/logoUpHome_dark@3x.png',
-                                width: 200.0,
-                                height: 60.0,
-                                fit: BoxFit.fitWidth,
-                              ),
-                            if (Theme.of(context).brightness == Brightness.dark)
-                              Image.asset(
-                                'assets/images/logoUpHome@3x.png',
-                                width: 200.0,
-                                height: 60.0,
-                                fit: BoxFit.fitWidth,
-                              ),
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 4.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 66.0, 0.0, 4.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.start,

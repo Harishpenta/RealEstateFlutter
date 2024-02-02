@@ -329,7 +329,7 @@ class _HomePageMainWidgetState extends State<HomePageMainWidget> {
                                     children: [
                                       Expanded(
                                         child: Text(
-                                          listViewPropertiesRecord.propertyName
+                                          "Roica Resort for Holidays"
                                               .maybeHandleOverflow(
                                             maxChars: 36,
                                             replacement: '…',

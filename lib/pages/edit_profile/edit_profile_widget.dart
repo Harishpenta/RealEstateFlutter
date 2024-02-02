@@ -142,7 +142,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                             shape: BoxShape.circle,
                           ),
                           child: Image.network(
-                            widget.userProfile!.photoUrl,
+                            "https://static.vecteezy.com/system/resources/thumbnails/019/900/322/small/happy-young-cute-illustration-face-profile-png.png",
                             fit: BoxFit.fitWidth,
                           ),
                         ),

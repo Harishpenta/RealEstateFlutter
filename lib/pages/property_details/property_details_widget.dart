@@ -56,8 +56,8 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 50.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 50.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -75,8 +75,8 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 60.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 60.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -94,8 +94,8 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 70.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 70.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -113,8 +113,8 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 80.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 80.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -132,8 +132,8 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 90.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 90.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -151,8 +151,8 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 100.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 100.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -170,8 +170,8 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0.4, 0.0),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(0.4, 0.0),
+          end: const Offset(1.0, 1.0),
         ),
       ],
     ),
@@ -249,7 +249,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 44.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 44.0, 0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -258,13 +258,13 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                               width: MediaQuery.sizeOf(context).width * 0.9,
                               height: 320.0,
                               decoration: BoxDecoration(
-                                color: Color(0xFFDBE2E7),
+                                color: const Color(0xFFDBE2E7),
                                 borderRadius: BorderRadius.circular(16.0),
                               ),
                               child: Stack(
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -278,9 +278,9 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                             child: FlutterFlowExpandedImageView(
                                               image: CachedNetworkImage(
                                                 fadeInDuration:
-                                                    Duration(milliseconds: 500),
+                                                    const Duration(milliseconds: 500),
                                                 fadeOutDuration:
-                                                    Duration(milliseconds: 500),
+                                                    const Duration(milliseconds: 500),
                                                 imageUrl:
                                                     valueOrDefault<String>(
                                                   widget.propertyRef?.mainImage,
@@ -309,9 +309,9 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                               BorderRadius.circular(16.0),
                                           child: CachedNetworkImage(
                                             fadeInDuration:
-                                                Duration(milliseconds: 500),
+                                                const Duration(milliseconds: 500),
                                             fadeOutDuration:
-                                                Duration(milliseconds: 500),
+                                                const Duration(milliseconds: 500),
                                             imageUrl: valueOrDefault<String>(
                                               widget.propertyRef?.mainImage,
                                               'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/sample-app-property-finder-834ebu/assets/oowrriphtb4n/hero_home@3x.jpg',
@@ -325,7 +325,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsets.all(16.0),
+                                    padding: const EdgeInsets.all(16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
@@ -346,7 +346,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                               child: Card(
                                                 clipBehavior:
                                                     Clip.antiAliasWithSaveLayer,
-                                                color: Color(0x3A000000),
+                                                color: const Color(0x3A000000),
                                                 shape: RoundedRectangleBorder(
                                                   borderRadius:
                                                       BorderRadius.circular(
@@ -357,7 +357,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                                       Colors.transparent,
                                                   borderRadius: 30.0,
                                                   buttonSize: 46.0,
-                                                  icon: Icon(
+                                                  icon: const Icon(
                                                     Icons.arrow_back_rounded,
                                                     color: Colors.white,
                                                     size: 24.0,
@@ -380,14 +380,14 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 12.0, 24.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Expanded(
                               child: Text(
-                                widget.propertyRef!.propertyName,
+                                "Roica Resort for Holidays",
                                 style:
                                     FlutterFlowTheme.of(context).displaySmall,
                               ).animateOnPageLoad(
@@ -397,19 +397,19 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 4.0, 24.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Expanded(
                               child: Text(
-                                widget.propertyRef!.propertyNeighborhood,
+                                "9601 Gibson Blvd SW, Albuquerque, New York , 87121",
                                 style: FlutterFlowTheme.of(context)
                                     .bodySmall
                                     .override(
                                       fontFamily: 'Lexend Deca',
-                                      color: Color(0xFF8B97A2),
+                                      color: const Color(0xFF8B97A2),
                                       fontSize: 12.0,
                                       fontWeight: FontWeight.normal,
                                     ),
@@ -420,7 +420,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 8.0, 24.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
@@ -444,13 +444,13 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.star_rounded,
                                 color: Color(0xFFFFA130),
                                 size: 24.0,
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     8.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   functions.ratingSummaryList(
@@ -460,14 +460,14 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                       .bodySmall
                                       .override(
                                         fontFamily: 'Lexend Deca',
-                                        color: Color(0xFF8B97A2),
+                                        color: const Color(0xFF8B97A2),
                                         fontSize: 12.0,
                                         fontWeight: FontWeight.normal,
                                       ),
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     2.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   'Reviews',
@@ -475,7 +475,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                       .bodySmall
                                       .override(
                                         fontFamily: 'Lexend Deca',
-                                        color: Color(0xFF8B97A2),
+                                        color: const Color(0xFF8B97A2),
                                         fontSize: 12.0,
                                         fontWeight: FontWeight.normal,
                                       ),
@@ -487,7 +487,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                             animationsMap['rowOnPageLoadAnimation1']!),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 12.0, 24.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -509,22 +509,22 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                             animationsMap['rowOnPageLoadAnimation2']!),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 4.0, 24.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 24.0),
                                 child: Text(
-                                  widget.propertyRef!.propertyDescription,
+                                  "9601 Gibson Blvd SW, Albuquerque, New York , 87121",
                                   style: FlutterFlowTheme.of(context)
                                       .bodySmall
                                       .override(
                                         fontFamily: 'Lexend Deca',
-                                        color: Color(0xFF8B97A2),
+                                        color: const Color(0xFF8B97A2),
                                         fontSize: 14.0,
                                         fontWeight: FontWeight.normal,
                                       ),
@@ -536,7 +536,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -558,7 +558,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                             animationsMap['rowOnPageLoadAnimation3']!),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 12.0, 0.0, 0.0),
                         child: StreamBuilder<List<AmenititiesRecord>>(
                           stream: queryAmenititiesRecord(
@@ -604,7 +604,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                           ?.evCharger ??
                                       true)
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 8.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.amenitityIndicatorModel1,
@@ -627,7 +627,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                   if (amenitiesRowAmenititiesRecord?.pool ??
                                       true)
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 8.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.amenitityIndicatorModel2,
@@ -651,7 +651,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                           ?.extraOutlets ??
                                       true)
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 8.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.amenitityIndicatorModel3,
@@ -673,7 +673,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                     ),
                                   if (amenitiesRowAmenititiesRecord?.ac ?? true)
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 8.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.amenitityIndicatorModel4,
@@ -697,7 +697,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                           ?.dogFriendly ??
                                       true)
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 8.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.amenitityIndicatorModel5,
@@ -720,7 +720,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                   if (amenitiesRowAmenititiesRecord?.washer ??
                                       true)
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 8.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.amenitityIndicatorModel6,
@@ -744,7 +744,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                   if (amenitiesRowAmenititiesRecord?.dryer ??
                                       true)
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 8.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.amenitityIndicatorModel7,
@@ -767,7 +767,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                   if (amenitiesRowAmenititiesRecord?.workout ??
                                       true)
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 8.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.amenitityIndicatorModel8,
@@ -791,7 +791,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                           ?.nightLife ??
                                       true)
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 8.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.amenitityIndicatorModel9,
@@ -814,7 +814,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                   if (amenitiesRowAmenititiesRecord?.hip ??
                                       true)
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 8.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.amenitityIndicatorModel10,
@@ -837,7 +837,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                   if (amenitiesRowAmenititiesRecord?.heater ??
                                       true)
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 8.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.amenitityIndicatorModel11,
@@ -866,7 +866,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                         child: Container(
                           width: double.infinity,
                           height: 260.0,
@@ -875,13 +875,13 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                 FlutterFlowTheme.of(context).primaryBackground,
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 12.0, 0.0, 12.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -896,7 +896,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                 ),
                                 Expanded(
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 8.0, 0.0, 0.0),
                                     child: StreamBuilder<List<ReviewsRecord>>(
                                       stream: queryReviewsRecord(
@@ -945,7 +945,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                           child: Stack(
                                             children: [
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 30.0),
                                                 child: PageView.builder(
@@ -969,7 +969,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                                             pageViewIndex];
                                                     return Padding(
                                                       padding:
-                                                          EdgeInsets.all(12.0),
+                                                          const EdgeInsets.all(12.0),
                                                       child: Container(
                                                         width: 100.0,
                                                         decoration:
@@ -977,7 +977,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                                           color: FlutterFlowTheme
                                                                   .of(context)
                                                               .secondaryBackground,
-                                                          boxShadow: [
+                                                          boxShadow: const [
                                                             BoxShadow(
                                                               blurRadius: 5.0,
                                                               color: Color(
@@ -993,7 +993,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   12.0),
                                                           child: Column(
                                                             mainAxisSize:
@@ -1053,20 +1053,20 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                                                                 FlutterFlowTheme.of(context).headlineSmall,
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 4.0,
                                                                                 0.0,
                                                                                 0.0),
                                                                             child:
                                                                                 RatingBarIndicator(
-                                                                              itemBuilder: (context, index) => Icon(
+                                                                              itemBuilder: (context, index) => const Icon(
                                                                                 Icons.star_rounded,
                                                                                 color: Color(0xFFFFA130),
                                                                               ),
                                                                               direction: Axis.horizontal,
                                                                               rating: pageViewReviewsRecord.rating,
-                                                                              unratedColor: Color(0xFF95A1AC),
+                                                                              unratedColor: const Color(0xFF95A1AC),
                                                                               itemCount: 5,
                                                                               itemSize: 24.0,
                                                                             ),
@@ -1081,7 +1081,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                                                         clipBehavior:
                                                                             Clip.antiAlias,
                                                                         decoration:
-                                                                            BoxDecoration(
+                                                                            const BoxDecoration(
                                                                           shape:
                                                                               BoxShape.circle,
                                                                         ),
@@ -1100,7 +1100,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                                               ),
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             8.0,
@@ -1114,7 +1114,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                                                     Expanded(
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
@@ -1133,7 +1133,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                                                               .bodySmall
                                                                               .override(
                                                                                 fontFamily: 'Lexend Deca',
-                                                                                color: Color(0xFF8B97A2),
+                                                                                color: const Color(0xFF8B97A2),
                                                                                 fontSize: 14.0,
                                                                                 fontWeight: FontWeight.normal,
                                                                               ),
@@ -1152,10 +1152,10 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                                 ),
                                               ),
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 1.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 10.0),
                                                   child: smooth_page_indicator
@@ -1178,7 +1178,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                                           .pageViewController!
                                                           .animateToPage(
                                                         i,
-                                                        duration: Duration(
+                                                        duration: const Duration(
                                                             milliseconds: 500),
                                                         curve: Curves.ease,
                                                       );
@@ -1225,13 +1225,13 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).primaryText,
                   boxShadow: [
-                    BoxShadow(
+                    const BoxShadow(
                       blurRadius: 4.0,
                       color: Color(0x55000000),
                       offset: Offset(0.0, 2.0),
                     )
                   ],
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
                     topLeft: Radius.circular(16.0),
@@ -1240,7 +1240,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                 ),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 40.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 40.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1264,7 +1264,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                     ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     4.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   '+ taxes/fees',
@@ -1272,7 +1272,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                       .bodySmall
                                       .override(
                                         fontFamily: 'Lexend Deca',
-                                        color: Color(0xFF8B97A2),
+                                        color: const Color(0xFF8B97A2),
                                         fontSize: 14.0,
                                         fontWeight: FontWeight.normal,
                                       ),
@@ -1281,7 +1281,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                             ],
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 4.0, 0.0, 0.0),
                             child: Text(
                               'per night',
@@ -1289,7 +1289,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                   .bodySmall
                                   .override(
                                     fontFamily: 'Lexend Deca',
-                                    color: Color(0xFF8B97A2),
+                                    color: const Color(0xFF8B97A2),
                                     fontSize: 14.0,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -1317,11 +1317,11 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                           options: FFButtonOptions(
                             width: 130.0,
                             height: 50.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: Color(0xFF4B39EF),
+                            color: const Color(0xFFEF3939),
                             textStyle: FlutterFlowTheme.of(context)
                                 .titleSmall
                                 .override(
@@ -1331,7 +1331,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                   fontWeight: FontWeight.w500,
                                 ),
                             elevation: 3.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
                             ),

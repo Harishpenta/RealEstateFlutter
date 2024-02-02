@@ -67,11 +67,21 @@ class _ChatMainWidgetState extends State<ChatMainWidget> {
         centerTitle: false,
         elevation: 2.0,
       ),
-      body: const SafeArea(
+      body:  SafeArea(
         top: true,
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(0.0, 2.0, 0.0, 0.0),
-          child: Center(child: Text("No Records found")),
+          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 2.0, 0.0, 0.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Center(
+                child: Image.asset(
+                  'assets/images/no_data_img.webp',
+                  width: 220.0,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
