@@ -295,8 +295,7 @@ class _HomePageMainWidgetState extends State<HomePageMainWidget> {
                                 Hero(
                                   tag: valueOrDefault<String>(
                                     listViewPropertiesRecord.mainImage,
-                                    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/sample-app-property-finder-834ebu/assets/jyeiyll24v90/pixasquare-4ojhpgKpS68-unsplash.jpg' +
-                                        '$listViewIndex',
+                                    listViewIndex % 2 == 0 ? 'https://www.realestate.com.au/news-image/w_873,h_492/v1661449720/news-lifestyle-content-assets/wp-content/production/capi_a82088c534c0615686d5aed63c7c648b_a32b2e8cdcc5049686a84441231e7f5f.jpeg?_i=AA' : 'https://i2.au.reastatic.net/800x600/4d4fd602e1cbcb033983bf8c487c03dfd954f7f87ede853b81b6b782deec2c6a/image.jpg' '$listViewIndex',
                                   ),
                                   transitionOnUserGestures: true,
                                   child: ClipRRect(
@@ -313,7 +312,7 @@ class _HomePageMainWidgetState extends State<HomePageMainWidget> {
                                           const Duration(milliseconds: 500),
                                       imageUrl: valueOrDefault<String>(
                                         listViewPropertiesRecord.mainImage,
-                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/sample-app-property-finder-834ebu/assets/jyeiyll24v90/pixasquare-4ojhpgKpS68-unsplash.jpg',
+                                        listViewIndex % 2 == 0 ? 'https://www.realestate.com.au/news-image/w_873,h_492/v1661449720/news-lifestyle-content-assets/wp-content/production/capi_a82088c534c0615686d5aed63c7c648b_a32b2e8cdcc5049686a84441231e7f5f.jpeg?_i=AA' : 'https://i2.au.reastatic.net/800x600/4d4fd602e1cbcb033983bf8c487c03dfd954f7f87ede853b81b6b782deec2c6a/image.jpg',
                                       ),
                                       width: double.infinity,
                                       height: 190.0,

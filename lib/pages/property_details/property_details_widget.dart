@@ -301,7 +301,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                       child: Hero(
                                         tag: valueOrDefault<String>(
                                           widget.propertyRef?.mainImage,
-                                          'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/sample-app-property-finder-834ebu/assets/oowrriphtb4n/hero_home@3x.jpg',
+                                          'https://i2.au.reastatic.net/800x600/4d4fd602e1cbcb033983bf8c487c03dfd954f7f87ede853b81b6b782deec2c6a/image.jpg',
                                         ),
                                         transitionOnUserGestures: true,
                                         child: ClipRRect(
@@ -314,7 +314,7 @@ class _PropertyDetailsWidgetState extends State<PropertyDetailsWidget>
                                                 const Duration(milliseconds: 500),
                                             imageUrl: valueOrDefault<String>(
                                               widget.propertyRef?.mainImage,
-                                              'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/sample-app-property-finder-834ebu/assets/oowrriphtb4n/hero_home@3x.jpg',
+                                              'https://i2.au.reastatic.net/800x600/4d4fd602e1cbcb033983bf8c487c03dfd954f7f87ede853b81b6b782deec2c6a/image.jpg',
                                             ),
                                             width: double.infinity,
                                             height: double.infinity,
